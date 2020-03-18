@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class BlogController {
-
-}
-
-public String listPosts(ModelMap) {
-    return "home";
     @RequestMapping("/")
-            put("title", "Blog Post 1");
+    public String listPosts(ModelMap map) {
+        map.put("title", "Blog Post 1");
+        return "home";
+    }
 }
+
+
